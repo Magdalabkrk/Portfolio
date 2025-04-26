@@ -1,0 +1,18 @@
+{
+    "json.schemas": [],
+
+    // Wyłącza automatyczne formatowanie niektórych elementów HTML
+    "html.format.contentUnformatted": "pre,code,textarea",
+
+    // Kontroluje sposób formatowania atrybutów HTML
+    "html.format.wrapAttributes": "auto",
+
+    // Dodaje nową linię na końcu pliku HTML
+    "html.format.endWithNewline": true,
+
+    // Wyłącza automatyczne dodawanie ukośnika w elementach samodomykających
+    "html.format.selfClosingTags": false,
+
+    // Wyłącza automatyczne formatowanie przy zapisie (opcjonalne)
+    "editor.formatOnSave": false
+}
