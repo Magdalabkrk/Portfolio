@@ -1,0 +1,16 @@
+   # Ignoruj katalog .vs (Visual Studio)
+   .vs/
+
+   # Ignoruj pliki tymczasowe
+   *.user
+   *.suo
+   *.log
+   *.tmp
+   *.obj
+   *.exe
+   *.dll
+
+   # Ignoruj katalogi build
+   bin/
+   obj/
+   

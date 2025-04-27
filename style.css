@@ -11,6 +11,9 @@ body {
   font-size: 10px;
   overflow-x: hidden !important;
 }
+body.no-scroll {
+        overflow: hidden;
+    }
 
 :root {
   /* Colors */
@@ -124,7 +127,10 @@ body {
   right: -1.5rem;
   background: var(--secondary);
   border-radius: 0.5rem;
-  animation: 1s ease-in-out infinite alternate-reverse squareShadow;
+  animation: none;
+}
+.section-title-main::after {
+    display: none;
 }
 
 @keyframes squareShadow {
@@ -287,6 +293,12 @@ header {
     .menu-link:last-child::after {
       display: none;
     }
+    @media only screen and (max-width: 768px) {
+        .section-title-main::after {
+            display: none;
+        }
+    }
+
   }
 
   /* C2A SECTION */
