@@ -134,13 +134,13 @@ body.no-scroll {
 }
 
 @keyframes squareShadow {
-  from {
-    box-shadow: var(--shadowAnimationStart);
-  }
+    from {
+        box-shadow: var(--shadowAnimationStart);
+    }
 
-  to {
-    box-shadow: var(--shadowAnimationEnd);
-  }
+    to {
+        box-shadow: var(--shadowAnimationEnd);
+    }
 }
 
 
@@ -211,14 +211,15 @@ header {
   .burger.active > span {
     background: var(--Orange);
   }
-  
+
   .burger span {
-    width: 100%;
-    height: 0.3rem;
-    border-radius: 0.5rem;
-    background: var(--main);
-    transition: all 0.3s ease-in-out;
-  }
+        width: 100%;
+        height: 0.3rem;
+        border-radius: 0.5rem;
+        background: var(--main);
+        transition: all 0.3s ease-in-out;
+        will-change: transform, background
+    }
   
   .burger span:nth-child(2) {
     width: 80%;
@@ -244,6 +245,10 @@ header {
   .menu-link {
     position: relative;
     cursor: pointer;
+  }
+  .menu-link:focus {
+    outline: 2px solid var(--Orange);
+    outline-offset: 2px;
   }
   
   /* DESKTOP MENU */
@@ -306,11 +311,7 @@ header {
           font-size: 1.2rem;
       }
   }
-@media only screen and (max-width: 768px) {
-    .section-title-main:after {
-        display: none;
-    }
-}
+
   /* C2A SECTION */
   .home {
     margin-top: 2rem;
