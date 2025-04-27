@@ -19,7 +19,7 @@ body.no-scroll {
   /* Colors */
   --White: #fff;
   --Orange: #bb5008;
-  --Dargreen: #2e4d2e;
+  --DarkGreen: #2e4d2e;
   --DarkWhiteBcg: #fafafa;
   --main: linear-gradient(
     to left bottom,
@@ -538,7 +538,7 @@ header {
 .biografia-sekcje {
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: normal;
   gap: 1rem;
   padding: 2rem;
 }
