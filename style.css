@@ -290,17 +290,27 @@ header {
       color: var(--Orange);
     }
   
-    .menu-link:last-child::after {
+    .menu-link:last-child:after {
       display: none;
     }
-    @media only screen and (max-width: 768px) {
-        .section-title-main::after {
-            display: none;
-        }
-    }
+    
+      .wyksztalcenie-content {
+          grid-template-columns: 1fr 1fr;
+      }
 
+      .wyksztalcenie-nazwa {
+          font-size: 1.4rem;
+      }
+
+      .umiejetności-tytul {
+          font-size: 1.2rem;
+      }
   }
-
+@media only screen and (max-width: 768px) {
+    .section-title-main:after {
+        display: none;
+    }
+}
   /* C2A SECTION */
   .home {
     margin-top: 2rem;
