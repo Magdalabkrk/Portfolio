@@ -708,77 +708,94 @@ footer {
 }
 
 .kontakt-content {
-    display: grid;
-    margin: 1rem 0rem 1rem 0rem;
-    align-items: center;
-}
-
-.kontakt-content-card {
-    margin: 2rem auto;
-    width: 85%;
-    box-shadow: var(--shadow);
-    padding: 1rem;
-    background: var(--White);
-    border-radius: 1rem;
-}
-
-    .kontakt-content-card img {
-        width: 70px;
-        display: block;
-        margin: 0 auto 1rem auto;
-    }
-
-.kontakt-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0.5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.kontakt-card {
+    background: var(--DarkWhiteBcg);
+    border-radius: 1.2rem;
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    min-width: 320px;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kontakt-nazwa {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: var(--textColor);
-    border-bottom: 2px solid var(--textColor);
-    display: inline-block;
-    
-}
-
-
-.kontakt-opis {
-    font-size: 1rem;
-    padding: 0.4rem;
+    color: var(--DarkGreen);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.04em;
     text-align: center;
-    color: var(--textLightColor);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-weight: bold;
-    margin: 1.2rem auto 0 auto;
-    max-width: 600px;
 }
 
-    .kontakt-opis a {
-        color: var(--Orange);
-        text-decoration: none;
-        transition: color 0.2s;
+.kontakt-dane {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.kontakt-label {
+    color: var(--textLightColor);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+}
+
+.kontakt-email {
+    color: var(--Orange);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s;
+}
+
+    .kontakt-email:hover {
+        color: var(--DarkGreen);
+        text-decoration: underline;
     }
 
-        .kontakt-opis a:hover {
-            color: var(--DarkGreen);
-            
-        }
+.kontakt-tel {
+    color: var(--Orange);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+}
 
-@media only screen and (min-width: 1000px) {
-    .kontakt-content {
-        grid-template-columns: 1fr;
+    .kontakt-tel:hover {
+        color: var(--DarkGreen);
+        text-decoration: underline;
+    }
+
+@media (max-width: 600px) {
+    .kontakt-card {
+        padding: 1.2rem 0.5rem;
+        min-width: unset;
+        max-width: 98vw;
     }
 
     .kontakt-nazwa {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
-    .kontakt-content-card {
-        width: 80%;
+    .kontakt-label,
+    .kontakt-email,
+    .kontakt-tel {
+        font-size: 1rem;
     }
 }
+
 
